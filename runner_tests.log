@@ -1,0 +1,16 @@
+2025-01-09 20:30:24,950 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\Users\steph\PycharmProjects\module_12\test_12_4.py", line 82, in test_run
+    runner = Runner(2)
+             ^^^^^^^^^
+  File "C:\Users\steph\PycharmProjects\module_12\test_12_4.py", line 16, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2025-01-09 20:30:24,953 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\Users\steph\PycharmProjects\module_12\test_12_4.py", line 72, in test_walk
+    runner = Runner('Runner', speed=-5)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\steph\PycharmProjects\module_12\test_12_4.py", line 21, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
